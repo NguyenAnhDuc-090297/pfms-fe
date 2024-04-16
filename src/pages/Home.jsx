@@ -11,58 +11,58 @@ function Home() {
     const userData = [
       {
         name: "Jan",
-        "VND": 4000,
+        data: 4000,
       },
       {
         name: "Feb",
-        "VND": 3000,
+        data: 3000,
       },
       {
         name: "Mar",
-        "VND": 5000,
+        data: 5000,
       },
       {
         name: "Apr",
-        "VND": 4000,
+        data: 4000,
       },
       {
         name: "May",
-        "VND": 3000,
+        data: 3000,
       },
       {
         name: "Jun",
-        "VND": 2000,
+        data: 2000,
       },
       {
         name: "Jul",
-        "VND": 4000,
+        data: 4000,
       },
       {
         name: "Agu",
-        "VND": 3000,
+        data: 3000,
       },
       {
         name: "Sep",
-        "VND": 4000,
+        data: 4000,
       },
       {
         name: "Oct",
-        "VND": 1000,
+        data: 1000,
       },
       {
         name: "Nov",
-        "VND": 4000,
+        data: 4000,
       },
       {
         name: "Dec",
-        "VND": 3000,
+        data: 3000,
       },
     ];
 
     return (
         <div className='home'>
             <FeaturedInfo />
-            <Chart data={userData} title="Monthly Spending" grid dataKey="VND" />
+            <Chart title="Monthly Spending" data={userData} />
             <div className="homeWidgets">
                 {/* <WidgetSm />
                 <WidgetLg /> */}
