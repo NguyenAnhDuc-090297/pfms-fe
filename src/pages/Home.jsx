@@ -1,5 +1,6 @@
-import Chart from '../components/Chart';
+import ExpenseChart from '../components/ExpenseChart';
 import FeaturedInfo from '../components/FeaturedInfo';
+import InvestmentChart from '../components/InvestmentChart';
 import '../css/page/home.css'
 
 /**
@@ -8,7 +9,7 @@ import '../css/page/home.css'
 + * @return {JSX.Element} The rendered Home component
 */
 function Home() {
-    const userData = [
+    const spendingData = [
       {
         name: "Jan",
         data: 4000,
@@ -59,13 +60,63 @@ function Home() {
       },
     ];
 
+    const investmentData = [
+      {
+        name: "Jan",
+        data: 40000,
+      },
+      {
+        name: "Feb",
+        data: 30000,
+      },
+      {
+        name: "Mar",
+        data: 50000,
+      },
+      {
+        name: "Apr",
+        data: 40000,
+      },
+      {
+        name: "May",
+        data: 30000,
+      },
+      {
+        name: "Jun",
+        data: 20000,
+      },
+      {
+        name: "Jul",
+        data: 40000,
+      },
+      {
+        name: "Agu",
+        data: 30000,
+      },
+      {
+        name: "Sep",
+        data: 40000,
+      },
+      {
+        name: "Oct",
+        data: 10000,
+      },
+      {
+        name: "Nov",
+        data: 40000,
+      },
+      {
+        name: "Dec",
+        data: 30000,
+      },
+    ];
+
     return (
         <div className='home'>
             <FeaturedInfo />
-            <Chart title="Monthly Spending" data={userData} />
-            <div className="homeWidgets">
-                {/* <WidgetSm />
-                <WidgetLg /> */}
+            <div style={{ display: "flex", flexBasis: "50%"}}>
+              <ExpenseChart title="Monthly Spending" data={spendingData} />
+              <InvestmentChart title="Monthly Investment" data={investmentData} />
             </div>
         </div>
     )

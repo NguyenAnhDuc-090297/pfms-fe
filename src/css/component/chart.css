@@ -8,3 +8,11 @@
 .chartTitle {
     margin-bottom: 20px;
 }
+
+.spending-chart {
+    width: 50%;
+}
+
+.investment-chart {
+    width: 50%;
+}

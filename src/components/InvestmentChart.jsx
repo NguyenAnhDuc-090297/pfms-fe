@@ -1,13 +1,13 @@
 import '../css/component/chart.css'
 
-import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-function Chart({ title, data}) {
+function InvestmentChart({ title, data}) {
     return (
-        <div className="chart">
+        <div className="chart investment-chart">
             <h3 className="chartTitle">{title}</h3>
             <ResponsiveContainer width="100%" aspect={4 / 1}>
-                <BarChart
+                <LineChart 
                     width={500}
                     height={300}
                     data={data}
@@ -19,21 +19,22 @@ function Chart({ title, data}) {
                     }}
                 >
                     <CartesianGrid vertical={false} />
-                    <XAxis dataKey="name" tickLine={false} />
+                    <XAxis dataKey="name" tickLine={false} axisLine={false}/>
                     <YAxis axisLine={false} tickLine={false} />
                     <Tooltip cursor={false}/>
                     <Legend />
-                    <Bar
-                        name="Expense"
+                    <Line 
+                        name="Investment"
+                        type="monotone"
                         dataKey="data"
-                        barSize={30}
-                        fill="#2caffe"
-                        activeBar={<Rectangle fill="#45c8ff" stroke="blue" />}
+                        barSize={20}
+                        fill="#57d478"
+                        stroke="#82ca9d"
                     />
-                </BarChart>
+                </LineChart >
             </ResponsiveContainer>
         </div>
     );
 }
 
-export default Chart;
+export default InvestmentChart;
