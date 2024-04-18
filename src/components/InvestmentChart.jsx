@@ -1,6 +1,6 @@
 import '../css/component/chart.css'
 
-import { LineChart, Line, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 function InvestmentChart({ title, data}) {
     return (

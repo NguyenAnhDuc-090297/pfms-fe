@@ -1,5 +1,10 @@
 .home{
     flex: 8 1;
+    background-color: aliceblue;
+}
+
+.home > * {
+    background-color: inherit !important;
 }
 
 .homeWidgets{
