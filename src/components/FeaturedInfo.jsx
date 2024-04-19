@@ -2,7 +2,7 @@ import '../css/component/featuredInfo.css'
 
 import { ArrowDownward, ArrowUpward } from "@mui/icons-material";
 
-function FeaturedInfo() {
+function SummaryInfo() {
     return (
         <div className='featured'>
             <div className='featuredItem'>
@@ -41,4 +41,4 @@ function FeaturedInfo() {
     )
 }
 
-export default FeaturedInfo;
+export default SummaryInfo;

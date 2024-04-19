@@ -1,5 +1,5 @@
 import ExpenseChart from '../components/ExpenseChart';
-import FeaturedInfo from '../components/FeaturedInfo';
+import SummaryInfo from '../components/FeaturedInfo';
 import InvestmentChart from '../components/InvestmentChart';
 import '../css/page/home.css'
 
@@ -113,8 +113,10 @@ function Home() {
 
     return (
         <div className='home'>
-            <FeaturedInfo />
-            <div style={{ display: "flex", flexBasis: "50%"}}>
+            <div className='summary'>
+              <SummaryInfo />
+            </div>
+            <div className='charts'>
               <ExpenseChart title="Monthly Spending" data={spendingData} />
               <InvestmentChart title="Monthly Investment" data={investmentData} />
             </div>

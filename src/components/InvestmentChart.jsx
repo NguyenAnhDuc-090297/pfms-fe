@@ -30,6 +30,7 @@ function InvestmentChart({ title, data}) {
                         barSize={20}
                         fill="#57d478"
                         stroke="#82ca9d"
+                        dot={false}
                     />
                 </LineChart >
             </ResponsiveContainer>

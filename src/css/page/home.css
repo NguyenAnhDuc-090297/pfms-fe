@@ -1,13 +1,17 @@
-.home{
+.home {
     flex: 8 1;
-    background-color: aliceblue;
-}
-
-.home > * {
-    background-color: inherit !important;
+    background-color: rgb(251, 251, 255);
 }
 
 .homeWidgets{
     display: flex;
     margin: 20px;
+}
+
+.charts {
+    display: flex;
+}
+
+.summary {
+    margin-top: 20px;
 }
