@@ -26,7 +26,7 @@ function ExpenseChart({ title, data}) {
                     <Bar
                         name="Expense"
                         dataKey="data"
-                        barSize={30}
+                        barSize={15}
                         fill="#2caffe"
                         activeBar={<Rectangle fill="#45c8ff" stroke="blue" />}
                     />

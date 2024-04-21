@@ -1,7 +1,8 @@
 import ExpenseChart from '../components/ExpenseChart';
-import SummaryInfo from '../components/FeaturedInfo';
 import InvestmentChart from '../components/InvestmentChart';
-import '../css/page/home.css'
+import SummaryInfo from '../components/SummaryInfoNEW';
+
+import '../css/page/home.css';
 
 /**
 + * Function that renders the Home component with user data and additional components.
@@ -113,7 +114,7 @@ function Home() {
 
     return (
         <div className='home'>
-            <div className='summary'>
+            <div className='summary-home'>
               <SummaryInfo />
             </div>
             <div className='charts'>
