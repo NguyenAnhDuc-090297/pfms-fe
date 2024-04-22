@@ -59,7 +59,7 @@ function SummaryInfo() {
           <FiberNewIcon style={{ color: purple[500] }} />
           <span className="summaryTitle">New Expenses</span>
           <div className="summaryMoneyContainer">
-            <span className="summaryMoney">$2,225</span>
+            <span className="summaryMoney">25</span>
             <span className="summaryMoneyRate">
               +3 <ArrowUpward className="summaryIcon" />
             </span>
